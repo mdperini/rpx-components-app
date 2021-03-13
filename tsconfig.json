@@ -11,6 +11,12 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "paths": {
+      "rpx-components-ui": [
+        "dist/rpx-components-ui/rpx-components-ui",
+        "dist/rpx-components-ui"
+      ]
+    },
     "module": "es2020",
     "lib": [
       "es2018",

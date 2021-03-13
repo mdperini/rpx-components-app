@@ -3,9 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port=4210",
     "build": "ng build",
     "test": "ng test",
+    "build:lib": "ng build rpx-components-ui",
+    "npm_pack": "cd dist/rpx-components-ui && npm pack",
+    "package": "npm run build:lib && npm run npm_pack",
+    "publish": "npm publish dist/rpx-components-ui",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -37,6 +41,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
